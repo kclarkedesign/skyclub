@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* ============================== */
+/*
+	Title: MyLandert Landing Page
+	Color: Blue
+*/
+/* ============================== */
+
+section.bg-color {
+	background-color: #0081CC;
+}
+
+body > section > .container > h2{
+	color: #0081cc;
+} 
+
+#testimonials {
+	background-color: #0081cc;
+} 
+
+#space .panel {
+	background-color: #0081cc;
+}
+
+header .navbar-default .navbar-nav > li > a:hover, header .navbar-default .navbar-nav > li > a:focus, header .navbar-default .navbar-nav > .active > a, header .navbar-default .navbar-nav > .active > a:hover, header .navbar-default .navbar-nav > a:hover
+header .navbar-default .navbar-nav > .active > a:focus {
+	color: #0081cc;
+}
+
+#features .item h3 {
+	color: #0081cc;
+}
+
+#features .item div {
+	background-color: #0081cc;
+	border: 10px solid #0081cc;
+}

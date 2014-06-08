@@ -1,0 +1,105 @@
+/* ==========================================================================
+ Media Queries
+ ========================================================================== */
+
+/* ---------------------------------------------------------------------- */
+/*	Version 1024px
+ /* ---------------------------------------------------------------------- */
+@media handheld, only screen and (max-width: 1024px) {
+	#download h2, #slider .item h1 {
+		font-size: 3em;
+	}
+
+	#slider .item p {
+		color: white;
+		font-size: 1.5em;
+		margin: 0 0 1em;
+	}
+
+	#gallery .item .hover i {
+		border: 4px solid #F06303;
+		color: #F06303;
+		display: block;
+		font-size: 2.9em;
+		height: 50px;
+		left: 60px;
+		line-height: 1.4em;
+		margin: 2% auto 0;
+		top: 60px;
+		width: 50px;
+	}
+	#gallery .item .hover h3 {
+		color: #F06303;
+		font-family: 'Armata', sans-serif;
+		font-size: 1.5em;
+		margin-top: 10px;
+	}
+	#gallery .item .hover p {
+		color: #849BAE;
+		font-size: 1.2em;
+	}
+	#gallery .item .hover {
+
+		height: 85%;
+	}
+
+}
+
+/* ---------------------------------------------------------------------- */
+/*	Mobile Version 767px
+ /* ---------------------------------------------------------------------- */
+
+@media handheld, only screen and (max-width: 767px) {
+	header .navbar-nav {
+		float: none;
+	}
+	#gallery .item .hover {
+	    height: 90%;
+	}
+
+}
+
+/* ---------------------------------------------------------------------- */
+/*	Mobile Version 600px
+ /* ---------------------------------------------------------------------- */
+
+@media handheld, only screen and (max-width: 600px) {
+}
+
+/* ---------------------------------------------------------------------- */
+/*	Mobile Version 568px
+ /* ---------------------------------------------------------------------- */
+
+@media handheld, only screen and (max-width: 568px) {
+
+	body > section > .container > h2 {
+		font-size: 4em;
+	}
+
+	#features .item div {
+		width: 201px;
+		height: 201px;
+	}
+
+	#features .item div i {
+		left: 50px;
+		top: 50px;
+	}
+
+	#space .panel-title {
+		font-size: 1.4em;
+	}
+
+	#space .panel-body {
+		font-size: 1.2em;
+		padding: 4%;
+	}
+	
+}
+
+/* ---------------------------------------------------------------------- */
+/*	Mobile Version 320px
+ /* ---------------------------------------------------------------------- */
+
+@media handheld, only screen and (max-width: 320px) {
+}
