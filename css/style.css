@@ -351,7 +351,9 @@ body > section {
 .img-rotate.rotate-3d {
 	-moz-transform: rotateY(90deg);
 }
-
+img.img-spinfix {
+    margin: -17px -19px;
+}
 
 
 
