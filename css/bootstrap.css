@@ -243,6 +243,9 @@ img {
 .img-circle {
     border-radius: 50%;
 }
+.img-circle img {
+    margin: -17px -19px;
+}
 hr {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;

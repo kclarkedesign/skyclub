@@ -111,7 +111,7 @@ header .navbar-collapse.in {
 	overflow-y: auto;
 }
 #logo {
-	padding: 12px 0;
+	padding: 20px 12px 0;
 }
 body > section {
     overflow: hidden;
@@ -228,8 +228,8 @@ body > section {
 	cursor: default;
 }
 #features .item div {
-	width: 221px;
-	height: 221px;
+	width: 216px;
+	height: 216px;
 	margin: 0 auto 25px;
 	position: relative;
 	-webkit-transition-duration: 0.8s;
@@ -617,6 +617,9 @@ footer p {
 	height: 100%;
 	position: absolute;
 	width: 100%;
+}
+ul.social.clearfix.nm {
+padding: 0px;
 }
 
 
