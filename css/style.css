@@ -158,23 +158,23 @@ section.bg-color:before {
 	line-height: 1.2em;
 	margin: 0 0 2.5em;
 }
-#slider .item .form-control {
+#download .item .form-control {
 	height: 55px;
 	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 	padding: 6px 116px 6px 12px;
 	border: 0;
 }
-#slider .item .form-inline .form-group {
+#download .item .form-inline .form-group {
 	display: inline-block;
 	margin-bottom: 0;
 	vertical-align: middle;
 	width: 100%;
 }
-#slider .item .form-inline {
+#download .item .form-inline {
 	margin-bottom: 17px;
 	position: relative;
 }
-#slider .item .btn {
+#download .item .btn {
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -183,7 +183,7 @@ section.bg-color:before {
 	color: #FFFFFF;
 	text-transform: uppercase;
 	height: 55px;
-	font-size: 2em;
+	font-size: 3em;
 	font-weight: 700;
 	border-radius: 0px 4px 4px 0px;
 	padding-bottom: 15px;
@@ -282,7 +282,7 @@ body > section {
  =============================================================*/
 #download h2 {
 	color: #FFFFFF;
-	font-size: 6.5em;
+	font-size: 3.5em;
 	font-weight: 700;
 	margin-bottom: 0.5em;
 	text-transform: uppercase;
@@ -810,7 +810,7 @@ min-width: 15px !important;
 
 .imageRotator {
 	position: relative;
-	height: 490px;
+	/*height: 490px;*/
 }
 
 .imageRotator img {
@@ -829,7 +829,7 @@ min-width: 15px !important;
 	-ms-transform-style: preserve-3d;
 	transform-style: preserve-3d;
    
-    padding-bottom: 69%;
+    padding: 9% 2%;
     position: relative;
 }
 .card {
