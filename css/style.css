@@ -111,7 +111,7 @@ header .navbar-collapse.in {
 	overflow-y: auto;
 }
 #logo {
-	padding: 12px 0;
+	padding: 20px 12px 0;
 }
 body > section {
     overflow: hidden;
@@ -158,23 +158,23 @@ section.bg-color:before {
 	line-height: 1.2em;
 	margin: 0 0 2.5em;
 }
-#slider .item .form-control {
+#download .item .form-control {
 	height: 55px;
 	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 	padding: 6px 116px 6px 12px;
 	border: 0;
 }
-#slider .item .form-inline .form-group {
+#download .item .form-inline .form-group {
 	display: inline-block;
 	margin-bottom: 0;
 	vertical-align: middle;
 	width: 100%;
 }
-#slider .item .form-inline {
+#download .item .form-inline {
 	margin-bottom: 17px;
 	position: relative;
 }
-#slider .item .btn {
+#download .item .btn {
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -183,7 +183,7 @@ section.bg-color:before {
 	color: #FFFFFF;
 	text-transform: uppercase;
 	height: 55px;
-	font-size: 2em;
+	font-size: 3em;
 	font-weight: 700;
 	border-radius: 0px 4px 4px 0px;
 	padding-bottom: 15px;
@@ -228,8 +228,8 @@ body > section {
 	cursor: default;
 }
 #features .item div {
-	width: 221px;
-	height: 221px;
+	width: 216px;
+	height: 216px;
 	margin: 0 auto 25px;
 	position: relative;
 	-webkit-transition-duration: 0.8s;
@@ -282,7 +282,7 @@ body > section {
  =============================================================*/
 #download h2 {
 	color: #FFFFFF;
-	font-size: 6.5em;
+	font-size: 3.5em;
 	font-weight: 700;
 	margin-bottom: 0.5em;
 	text-transform: uppercase;
@@ -351,7 +351,9 @@ body > section {
 .img-rotate.rotate-3d {
 	-moz-transform: rotateY(90deg);
 }
-
+img.img-spinfix {
+    margin: -17px -19px;
+}
 
 
 
@@ -408,14 +410,14 @@ body > section {
 	color: #EF6302;
 }
 #pricing ul li a {
-	background: url("../img/download-inverse.png") no-repeat scroll 13% 23px #7CBCE2;
+	/*background: url("../img/download-inverse.png") no-repeat scroll 13% 23px #7CBCE2;*/
 	border-radius: 5px 5px 5px 5px;
 	color: #FFFFFF;
 	display: block;
 	font-family: 'Oswald', sans-serif !important;
 	font-size: 22px;
 	margin: 0 auto;
-	padding: 25px 10px 23px 56px;
+	padding: 25px 10px 23px 10px;
 	text-transform: uppercase;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
@@ -618,6 +620,9 @@ footer p {
 	position: absolute;
 	width: 100%;
 }
+ul.social.clearfix.nm {
+padding: 0px;
+}
 
 
 
@@ -807,7 +812,7 @@ min-width: 15px !important;
 
 .imageRotator {
 	position: relative;
-	height: 490px;
+	/*height: 490px;*/
 }
 
 .imageRotator img {
@@ -826,7 +831,7 @@ min-width: 15px !important;
 	-ms-transform-style: preserve-3d;
 	transform-style: preserve-3d;
    
-    padding-bottom: 69%;
+    padding: 9% 2%;
     position: relative;
 }
 .card {

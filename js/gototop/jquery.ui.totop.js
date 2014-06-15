@@ -23,7 +23,7 @@
             containerIDhash2 = '#' + settings.containerID + ' a',
             containerHoverIDHash2 = '#'+settings.containerHoverID + ' a';
 		
-		$('body').append('<div id="'+settings.containerID+'"><span class="glyphicon glyphicon-chevron-up"> </span></div>');
+		$('body').append('<div id="'+settings.containerID+'"><span class="">&#9650;</span></div>');
 		$(containerIDhash).hide().on('click.UItoTop',function(){
 			$('html, body').animate({scrollTop:0}, settings.scrollSpeed, settings.easingType);
 			$('#'+settings.containerHoverID, this).stop().animate({'opacity': 0 }, settings.inDelay, settings.easingType);

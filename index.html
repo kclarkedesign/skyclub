@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     
     <!-- Page Title -->
-    <title>Sky Club</title>
+    <title>SkyFall.Club | Get packages that don't ship to your country</title>
     
     <!-- Responsive Metatag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,6 +34,18 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+
+    <style>
+    	#logo{
+    		font-family: 'Bad Script', cursive;
+    		padding-top:25px;
+    		font-size:28px;
+    		color:white;
+    	}
+    	
+
+    </style>
   </head>
   <body>
   	
@@ -82,15 +94,16 @@
 			      <span class="icon-bar"></span>
 			      <span class="icon-bar"></span>
 			    </button>
-			    <a id="logo" class="navbar-brand" href="#">SkyClub</a>
+			    <a id="logo" class="navbar-brand" href="#">SkyFall<span style="font-family: helvetica; san-serif;">.</span>Club</a>
 			  </div>
 			  <!-- Collect the nav links, forms, and other content for toggling -->
 			  <div class="collapse navbar-collapse navbar-ex1-collapse nb np">
 			    <ul class="nav navbar-nav">
 			      <li><a href="#slider" class="anchor">About</a></li>
-			      <li><a href="#features" class="anchor">Apply</a></li>
+			      <li><a href="#features" class="anchor">Features</a></li>
+			      <li><a href="#download" class="anchor">Apply</a></li>
 			      <li><a href="#pricing" class="anchor">Pricing</a></li>
-			      <li><a href="#gallery" class="anchor">Contact</a></li>
+			      <li><a href="#myModal" data-toggle="modal">Contact</a></li>
 	
 			    </ul>
 			  </div><!-- /.navbar-collapse -->
@@ -105,13 +118,7 @@
 				<div class="col-sm-5">
 					<h1>Get packages that don't ship to your country!</h1>
 					<p></p>
-					<form  id="newsletter" action="newsletter.php" class="form-inline" role="form">
-					  <div class="form-group">
-					    <label class="sr-only" for="exampleInputEmail2">Email address</label>
-					    <input type="email" name="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your email">
-					  	<button type="submit" class="btn">submit</button>
-					  </div>
-					</form>
+					
 				</div>
 				<div class="col-sm-7">
 					<img src="img/big-hand.png" class="img-responsive main" alt="/" />
@@ -127,46 +134,23 @@
         	<div class="row">
         		<div class="col-sm-4 from-left">
 					<div class="item">
-						<div class="img-circle"><i class="icon-cog img-circle"></i></div>
-						<h3>Robust Toolset</h3>
-						<p>Check out our super awesome and mega cool mobile app. We promise you tons of fun and hours of tappingorem ipsum dolor sit amet.</p>
+						<div class="img-circle"><img src="/img/left.PNG" class="img-spinfix" alt="desktop"/></div>
+						<h3>Order Online</h3>
+						<p>Shop online at your favorite store. When you check-out, use the U.S. address we provide.</p>
 					</div>
 				</div>
         		<div class="col-sm-4 bottom">
 					<div class="item">
-						<div class="img-circle "><i class="icon-cloud img-circle"></i></div>
-						<h3>Robust Toolset</h3>
-						<p>Check out our super awesome and mega cool mobile app. We promise you tons of fun and hours of tappingorem ipsum dolor sit amet.</p>
+						<div class="img-circle "><img src="/img/middle.PNG" class="img-spinfix" alt="house"/></div>
+						<h3>Get Your Package</h3>
+						<p>We handle shipping and logistics, while you sit back and relax!</p>
 					</div>
 				</div>
         		<div class="col-sm-4 from-right">
 					<div class="item">
-						<div class="img-circle"><i class="icon-clock img-circle"></i></div>
-						<h3>Robust Toolset</h3>
-						<p>Check out our super awesome and mega cool mobile app. We promise you tons of fun and hours of tappingorem ipsum dolor sit amet.</p>
-					</div>
-				</div>
-        	</div>
-        	<div class="row">
-        		<div class="col-sm-4 from-left">
-					<div class="item">
-						<div class="img-circle"><i class="icon-cog img-circle"></i></div>
-						<h3>Robust Toolset</h3>
-						<p>Check out our super awesome and mega cool mobile app. We promise you tons of fun and hours of tappingorem ipsum dolor sit amet.</p>
-					</div>
-				</div>
-        		<div class="col-sm-4 bottom">
-					<div class="item">
-						<div class="img-circle"><i class="icon-cloud img-circle"></i></div>
-						<h3 class="armata">Robust Toolset</h3>
-						<p>Check out our super awesome and mega cool mobile app. We promise you tons of fun and hours of tappingorem ipsum dolor sit amet.</p>
-					</div>
-				</div>
-        		<div class="col-sm-4 from-right">
-					<div class="item">
-						<div class="img-circle"><i class="icon-camera img-circle"></i></div>
-						<h3>Robust Toolset</h3>
-						<p>Check out our super awesome and mega cool mobile app. We promise you tons of fun and hours of tappingorem ipsum dolor sit amet.</p>
+						<div class="img-circle"><img src="/img/right.PNG" class="img-spinfix" alt="smiley"/></div>
+						<h3>Review</h3>
+						<p>We welcome your feedback to continuously enhance our service!</p>
 					</div>
 				</div>
         	</div>
@@ -184,20 +168,27 @@
 				    <div class="item active">
 				       	<div class="row">
 			        		<div class="col-sm-5 from-left">
-								<h2>the best landing app you have ever seen</h2>
-								<a href="#" class="btn-google-play">Google Play</a>
-								<a href="#" class="btn-app-store">App Store</a>
+								<h2>A service that get's what you want where you want it</h2>
+								<!--<a href="#" class="btn-google-play">Google Play</a>
+								<a href="#" class="btn-app-store">App Store</a>-->
 							</div>
 			        		<div class="col-sm-7 from-right">
 			        			<div class="rotator">
-				                    <div class="front card">
+			        				<form  id="newsletter" action="newsletter.php" class="form-inline" role="form">
+					  <div class="slider"><div class="form-group">
+					    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+					    <input type="email" name="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your email">
+					  	<button type="submit" class="btn">APPLY</button>
+					  </div>
+					</form></div>
+				                    <!--<div class="front card">
 				                        <img class="img-responsive" src="img/img-download-iphone-1.png" alt="Mockup iPhone Two Image">
 				                    </div>
 				                    <div class="back card">
 				                        <img class="img-responsive" src="img/img-download-iphone-2.png" alt="Mockup iPhone Image" >
 				                    </div>
 				                </div>
-								<!-- <img src="img/img-download-iphone.png" alt="/" class="img-responsive img-rotate" />  -->
+								<img src="img/img-download-iphone.png" alt="/" class="img-responsive img-rotate" />  -->
 							</div>
 			        	</div>
 				    </div>			
@@ -219,27 +210,27 @@
                 <div class="col-sm-4 from-left">
                   <ul class="table nm np">
                     <li class="title nb">Pay per package</li>
-                    <li class="price nb">$20/package plus shipping</li>
+                    <li class="price nb">$15/package plus shipping</li>
                     <li>Regular shipping rates apply</li>
-                    <li><a href="#">Click for more info!</a></li>
+                    <!--<li><a href="#">Click for more info!</a></li>-->
                   </ul>
                 </div>                
                 <div class="col-sm-4 bottom">
                   <ul class="table nm np">
                     <li class="title nb">3 packages/month</li>
                     <li class="price nb">$30/month plus shipping</li>
-                    <li>%15 off shipping rates</li>
+                    <li>15% off shipping rates</li>
                     
-                    <li><a href="#">Click for more info!</a></li>
+                    <!--<li><a href="#">Click for more info!</a></li>-->
                   </ul>
                 </div>                
                 <div class="col-sm-4 from-right">
                   <ul class="table nm np">
                     <li class="title nb">6 packages/month</li>
-                    <li class="price nb">$40/month plus shipping</li>
+                    <li class="price nb">$60/month plus shipping</li>
                     <li>20% off shipping rates</li>
                     
-                    <li><a href="#">Click for more info!</a></li>
+                    <!--<li><a href="#">Click for more info!</a></li>-->
                   </ul>
                 </div>
         	</div>
@@ -251,7 +242,7 @@
     <!-- space -->    
     <section id="space" class="bg-color">
     	<div class="container">
-        	<div class="row">
+        	<!--<div class="row">
         		<div class="col-sm-7 col-offset-1 thumb from-left">					
 					<img src="img/app-layer-1.png" alt="/" class="img-responsive layer delay-1" />
 					<img src="img/app-layer-2.png" alt="/" class="img-responsive layer delay-2" />
@@ -317,18 +308,18 @@
 					      </div>
 					    </div>
 					  </div>
-					</div>					
+					</div>-->					
 					
 					
 					
 				</div>
-        	</div>
+        	</div>-->
         </div>
     </section>	
     <!-- end space -->
 
     
-	<!-- Gallery -->	
+	<!-- Gallery
     <section id="gallery">
     	<div class="container text-center">
     		<h2>Gallery</h2>
@@ -413,9 +404,9 @@
         	
         </div>
     </section>	
-    <!-- end Gallery -->       
+     end Gallery -->       
    
- 	<!-- Testimonials -->	
+ 	<!-- Testimonials 
     <section id="testimonials" class="bottom" >
     	<div class="container text-center">
     		
@@ -597,7 +588,7 @@
     		
     	</div>
     </section>
-    <!-- end Testimonials -->  
+     end Testimonials --> 
 
 
  
@@ -606,12 +597,12 @@
 	<footer>
 	<div class="container text-center">
 		<ul class="social clearfix nm">			
-			<li><a href="#" data-toggle="tooltip" title="Google+"><i class="icon-gplus img-circle"></i><span></span></a></li>
-			<li><a href="#" data-toggle="tooltip" title="youtube"><i class="icon-youtube img-circle"></i><span></span></a></li>
-			<li><a href="#" data-toggle="tooltip" title="twitter"><i class="icon-twitter img-circle"></i><span></span></a></li>
-			<li><a href="#" data-toggle="tooltip" title="facebook"><i class="icon-facebook img-circle"></i><span></span></a></li>
+			<li><a href="#" data-toggle="tooltip" title="Android"><img src="/img/android.png"></a></li>
+			<li><a href="#" data-toggle="tooltip" title="Chrome"><img src="/img/chrome.png"></a></li>
+			<li><a href="#" data-toggle="tooltip" title="Windows"><img src="/img/windows8.png"></a></li>
+			<li><a href="#" data-toggle="tooltip" title="Google+"><img src="/img/googleplus-square.png"></a></li>
 		</ul>
-		<p>MyLandert Template by mustachethemes. Available on Apple Store.</p>
+		<p>Skyfall.club Available on Google Play, Apple Store and the Web. 2014 &copy;</p>
 	</div> 
 	</footer>
     <!--End Footer-->    
