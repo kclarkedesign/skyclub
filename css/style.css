@@ -884,6 +884,7 @@ min-width: 15px !important;
 #download .item .btn.submit {
     position: relative;
     margin: 10px 0;
+    border-radius: 4px;
 }
 #download .btn {
 	width: 100%;
