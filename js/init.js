@@ -24,6 +24,8 @@
 					$('#form-email').attr('placeholder',"Congrats!");
 					$('#form-email').val('');
 					$('#sendBut').val("Applied!");
+					$('#sendBut1').hide();
+					$('#fbApplyMessage').hide();
 
 
 				}
