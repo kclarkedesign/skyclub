@@ -179,10 +179,10 @@
 			        			<h2 style="color: #ffffff;  margin-bottom: -0.1em; font-size: 5em; text-transform: uppercase; ">Apply</h2>
 			        			<div class="rotator">
 
-			        				<form  id="newsletter" action="newsletter.php" class="form-inline" role="form">
+			        				<form  name="newsletter-form" id="newsletter-form" action="javascript:addBeta()" method="POST">
 					  <div class="slider"><div class="form-group">
 					    <label class="sr-only" for="exampleInputEmail2">Email address</label>
-					    <input type="email" name="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your email">
+					    <input type="email" class="form-control" name="newsletter[form-email]" id="form-email" placeholder="Enter your email">
 					  	<button type="submit" class="btn submit" style="
     padding: 2px;
     width: 136px;
