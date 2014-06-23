@@ -43,6 +43,13 @@
     		font-size:28px;
     		color:white;
     	}
+
+			#socialShare{
+
+				display:none;
+			}
+
+		</style>
     	
 
     </style>
@@ -74,6 +81,7 @@
 	        </div>
 	        <div class="modal-footer">
 	          <button type="submit" class="btn btn-primary">Submit</button>
+
 	        </div>
 	    </form>
       </div><!-- /.modal-content -->
@@ -175,11 +183,26 @@
 					  <div class="slider"><div class="form-group">
 					    <label class="sr-only" for="exampleInputEmail2">Email address</label>
 					    <input type="email" name="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your email">
-					  	<button type="submit" class="btn" style="
+					  	<button type="submit" class="btn submit" style="
     padding: 2px;
     width: 136px;
 ">SUBMIT</button>
-					  </div>
+<label> <h3 style= "color: #ffffff;">Sign up using Facebook</h3>
+<input type="button" id="sendBut1" value="Facebook" onClick="loginUser();" class="btn fb-btn" style="width: 100%; font-size:2em; margin-top: 10px; padding: 8px; "/></label>
+					  </div><!-- socialShare goes here -->
+							 <div id="socialShare">
+
+								<!--twitter button -->
+									<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://jub.club" data-text="Get products that don't ship to your country" data-count="none">Tweet</a>
+									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+									<!--facebook share button -->
+									<div class="fb-share-button" data-href="https://jubclub.com" data-type="button" style="margin-top:20px"></div>
+									
+									<!--end facebook share button-->
+
+								</div>
 					</form></div></div>
 				                    <!--<div class="front card">
 				                        <img class="img-responsive" src="img/img-download-iphone-1.png" alt="Mockup iPhone Two Image">

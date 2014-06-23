@@ -174,7 +174,7 @@ section.bg-color:before {
 	margin-bottom: 17px;
 	position: relative;
 }
-#download .item .btn {
+#download .item .btn.submit {
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -188,6 +188,21 @@ section.bg-color:before {
 	border-radius: 0px 4px 4px 0px;
 	padding-bottom: 15px;
 }
+#download .item .btn  {
+	position: relative;
+	right: 0;
+	top: 0;
+	width: 107px;
+	background: #EF6302;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	height: 55px;
+	font-size: 3em;
+	font-weight: 700;
+	border-radius: 4px;
+	padding-bottom: 15px;
+}
+
 body > section > .container > h2 {
 	font-size: 5em;
 	margin-bottom: 0.7em;
@@ -865,12 +880,18 @@ min-width: 15px !important;
 	transform: rotateY(180deg);
 }
 @media (max-width: 420px) {
-#download .form-group button.btn {
+#download .form-group button.btn,
+#download .item .btn.submit {
     position: relative;
     margin: 10px 0;
 }
-#download .item .form-control {
+#download .btn {
 	width: 100%;
+	margin: 0 auto;
 
+}
+#download .item .btn.fb-btn	{
+	font-size: 12px;
+	margin: 2px 0;
 }
 }
