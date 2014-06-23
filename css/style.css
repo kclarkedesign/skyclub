@@ -161,7 +161,7 @@ section.bg-color:before {
 #download .item .form-control {
 	height: 55px;
 	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-	padding: 6px 116px 6px 12px;
+	padding: 6px 0 6px 12px;
 	border: 0;
 }
 #download .item .form-inline .form-group {
@@ -864,4 +864,13 @@ min-width: 15px !important;
 	-moz-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 }
+@media (max-width: 420px) {
+#download .form-group button.btn {
+    position: relative;
+    margin: 10px 0;
+}
+#download .item .form-control {
+	width: 100%;
 
+}
+}

@@ -3510,6 +3510,7 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
 .container .jumbotron {
     border-radius: 6px;
 }
+
 @media screen and (min-width: 768px) {
 .jumbotron {
     padding-bottom: 48px;
@@ -4943,5 +4944,11 @@ tr.hidden-print {
 }
 th.hidden-print, td.hidden-print {
     display: none !important;
+}
+}
+@media (max-width: 420px) {
+#download .form-group button.btn {
+    position: relative;
+    marging: 10px;
 }
 }
