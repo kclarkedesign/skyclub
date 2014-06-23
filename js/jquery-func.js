@@ -149,27 +149,7 @@ jQuery(document).ready(function($) {
 
 
 	//=================================== form forms =================================//
-	$("#newsletter, #contact").submit(function() {
-		var elem = $(this);
-		var urlTarget = $(this).attr("action");
-		$.ajax({
-			type : "POST",
-			url : urlTarget,
-			dataType : "html",
-			data : $(this).serialize(),
-			beforeSend : function() {
-				elem.prepend("<div class='loading alert'>" + "<a class='close' data-dismiss='alert'>×</a>" + "Loading" + "</div>");
-				//elem.find(".loading").show();
-			},
-			success : function(response) {
-				elem.prepend(response);
-				//elem.find(".response").html(response);
-				elem.find(".loading").hide();
-				elem.find("input[type='text'],input[type='email'],textarea").val("");
-			}
-		});
-		return false;
-	});
+	
 
 
 
