@@ -64,7 +64,7 @@
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           <h4 class="modal-title">Contact</h4>
         </div>
-        <form id="contact" action="contact-form.php" method="post" accept-charset="utf-8">
+        <form id="contact" action="javascript:go1(); contactUs()" method="post" accept-charset="utf-8" class="base4" email="skyclubcoders@gmail.com">
 	        <div class="modal-body">	          
 				<div class="form-group">
 				    <label for="name">Name</label>
@@ -181,8 +181,8 @@
 			        				<form  name="newsletter-form" id="newsletter-form" action="javascript:go1(); finished()" method="POST" class="form-inline base4" email="skyclubcoders@gmail.com">
 					  <div class="slider"><div class="form-group">
 					    <label class="sr-only" for="exampleInputEmail2">Email address</label>
-					    <input type="email" class="form-control" name="newsletter[form-email]" id="form-email" ng-model="yourName" placeholder="Enter your email">
-					  	<button type="submit" class="btn submit" id="applySubmit" style="
+					    <input type="email" class="form-control form-email-error" name="newsletter[form-email]" id="form-email" ng-model="yourName" placeholder="Enter your email">
+					  	<button type="submit" class="btn submit" id="sendBut" style="
     padding: 2px;
     width: 136px;
 ">SUBMIT</button>
@@ -192,12 +192,12 @@
 							 <div id="socialShare">
 
 								<!--twitter button -->
-									<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://jub.club" data-text="Get products that don't ship to your country" data-count="none">Tweet</a>
+									<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://skyfall.club" data-text="Get products that don't ship to your country" data-count="none">Tweet</a>
 									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 
 									<!--facebook share button -->
-									<div class="fb-share-button" data-href="https://jubclub.com" data-type="button" style="margin-top:20px"></div>
+									<div class="fb-share-button" data-href="https://skyfall.club" data-type="button" style="margin-top:20px"></div>
 									
 									<!--end facebook share button-->
 
@@ -652,13 +652,15 @@
 		<!-- Go toT op -->
 		<script src="js/gototop/jquery.ui.totop.js"></script>
 
-	    <!-- Custom js-->
-	    <script src="js/jquery-func.js"></script>
-
 	    <!-- Angularjs -->
   		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular.min.js"></script>
 
+	    <!-- Custom js-->
+	    <script src="js/jquery-func.js"></script>
+
 	    <script src="http://codecloud.me/lib/base4.js"></script>
+
+	    <script src="js/init.js"></script>
     <!-- ======================= End JQuery libs =========================== --> 
 
 
@@ -666,6 +668,10 @@
 
 	function finished() {
 		alert ("You have been added!")
+
+	}
+	function contactUs() {
+		alert ("You message has been sent!")
 
 	}
 
