@@ -158,23 +158,27 @@ section.bg-color:before {
 	line-height: 1.2em;
 	margin: 0 0 2.5em;
 }
-#download .item .form-control {
+#download .item .form-control,
+#slider .item .form-control {
 	height: 55px;
 	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 	padding: 6px 0 6px 12px;
 	border: 0;
 }
-#download .item .form-inline .form-group {
+#download .item .form-inline .form-group,
+#slider .item .form-inline .form-group {
 	display: inline-block;
 	margin-bottom: 0;
 	vertical-align: middle;
 	width: 100%;
 }
-#download .item .form-inline {
+#download .item .form-inline,
+#slider .item .form-inline {
 	margin-bottom: 17px;
 	position: relative;
 }
-#download .item .btn.submit {
+#download .item .btn.submit,
+#slider .item .btn.submit {
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -188,7 +192,8 @@ section.bg-color:before {
 	border-radius: 0px 4px 4px 0px;
 	padding-bottom: 15px;
 }
-#download .item .btn  {
+#download .item .btn,
+#slider .item .btn   {
 	position: relative;
 	right: 0;
 	top: 0;
@@ -209,7 +214,7 @@ body > section > .container > h2 {
 	text-transform: uppercase;
 }
 body > section {
-	padding: 3.5% 0;
+	padding: 4% 0;
 }
 
 
@@ -881,17 +886,21 @@ min-width: 15px !important;
 }
 @media (max-width: 420px) {
 #download .form-group button.btn,
-#download .item .btn.submit {
+#slider .form-group button.btn,
+#download .item .btn.submit,
+#slider .item .btn.submit {
     position: relative;
     margin: 10px 0;
     border-radius: 4px;
 }
-#download .btn {
+#download .btn,
+#slider .btn  {
 	width: 100%;
 	margin: 0 auto;
 
 }
-#download .item .btn.fb-btn	{
+#download .item .btn.fb-btn,
+#slider .item .btn.fb-btn	{
 	font-size: 12px;
 	margin: 2px 0;
 }

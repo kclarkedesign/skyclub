@@ -63,7 +63,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">Contact - Have questions? Ask away!</h4>
+          <h4 class="modal-title">Contact</h4>
         </div>
         <form id="contact" action="javascript:go1(); contactUs()" method="post" accept-charset="utf-8" class="base4" email="skyclubcoders@gmail.com">
 	        <div class="modal-body">	          
@@ -109,9 +109,9 @@
 			  <div class="collapse navbar-collapse navbar-ex1-collapse nb np">
 			    <ul class="nav navbar-nav">
 			      <!--<li><a href="#top" class="anchor">About</a></li>-->
-			      <li><a href="#download" class="anchor">Join</a></li> 
 			      <li><a href="#features" class="anchor">About</a></li>
-			      <!--<li><a href="#pricing" class="anchor">Pricing</a></li>-->
+			      <li><a href="#download" class="anchor">Join</a></li>
+			      <li><a href="#pricing" class="anchor">Pricing</a></li>
 			      <li><a href="#myModal" data-toggle="modal">Contact</a></li>
 	
 			    </ul>
@@ -126,7 +126,17 @@
         	<div class="row item">
 				<div class="col-sm-8 col-sm-offset-2 text-center">
 					<h1>Get packages that don't ship to your country!</h1>
-					<p style="line-height: 28px; margin-bottom: 0;">Get a U.S. address to forward your packages to. Once received your package will be shipped overnight to anywhere you want.<br/>It really is just that simple!</p>
+					<p style="line-height: 28px; margin-bottom:25px;">Get a <strong>FREE</strong> U.S. address to forward your packages to. Once received your package will be shipped overnight to anywhere you want. It really is just that simple!</p>
+
+					<form  name="newsletter-form" id="newsletter-form" action="javascript:go1(); addBeta(); finished()" method="POST" class="form-inline base4" email="skyclubcoders@gmail.com" style="margin-bottom: 125px">
+					  <div class="slider"><div class="form-group">
+					    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+					    <input type="email" class="form-control form-email-error" name="newsletter[form-email]" id="form-email" ng-model="yourName" placeholder="Your email address">
+					    <input type="submit" id="sendBut" value="Submit" class="btn submit" style="width:136px;"/>
+					   
+					  </div>
+							
+					</form>
 					
 				</div>
 				<!--<div class="col-sm-7">
@@ -136,6 +146,38 @@
 		</div>
     </section>
     <!-- end slider -->
+	<!-- features -->	
+    <section id="features">
+    	<div class="container text-center">
+    		<h2>About</h2>
+        	<div class="row">
+        		<div class="col-sm-4 from-left">
+					<div class="item">
+						<div class="img-circle"><img src="/img/left.PNG" class="img-spinfix" alt="desktop"/></div>
+						<h3>Order Online</h3>
+						<p>Shop online at your favorite store. When you check-out, use the U.S. address we provide.</p>
+					</div>
+				</div>
+        		<div class="col-sm-4 bottom">
+					<div class="item">
+						<div class="img-circle "><img src="/img/middle.PNG" class="img-spinfix" alt="house"/></div>
+						<h3>Get Your Package</h3>
+						<p>We handle shipping and logistics, while you sit back and relax!</p>
+					</div>
+				</div>
+        		<div class="col-sm-4 from-right">
+					<div class="item">
+						<div class="img-circle"><img src="/img/right.PNG" class="img-spinfix" alt="smiley"/></div>
+						<h3>Review</h3>
+						<p>We welcome your feedback to continuously enhance our service!</p>
+					</div>
+				</div>
+        	</div>
+        </div>
+    </section>	
+    <!-- end features -->
+
+
     <!-- download -->    
     <section id="download" class="bg-color">
     	<div class="container">
@@ -190,74 +232,41 @@
     </section>	
     <!-- end download -->
 
-	<!-- features -->	
-    <section id="features">
-    	<div class="container text-center">
-    		<h2>About</h2>
-        	<div class="row">
-        		<div class="col-sm-4 from-left">
-					<div class="item">
-						<div class="img-circle"><img src="/img/left.PNG" class="img-spinfix" alt="desktop"/></div>
-						<h3>Order Online</h3>
-						<p>Shop online at your favorite store. When you check-out, use the U.S. address we provide.</p>
-					</div>
-				</div>
-        		<div class="col-sm-4 bottom">
-					<div class="item">
-						<div class="img-circle "><img src="/img/middle.PNG" class="img-spinfix" alt="house"/></div>
-						<h3>Get Your Package</h3>
-						<p>We handle shipping and logistics, while you sit back and relax!</p>
-					</div>
-				</div>
-        		<div class="col-sm-4 from-right">
-					<div class="item">
-						<div class="img-circle"><img src="/img/right.PNG" class="img-spinfix" alt="smiley"/></div>
-						<h3>Review</h3>
-						<p>We welcome your feedback to continuously enhance our service!</p>
-					</div>
-				</div>
-        	</div>
-        </div>
-    </section>	
-    <!-- end features -->
-
-
-    
 
     <!--Pricing table-->
-    <!--<section id="pricing">
+    <section id="pricing">
         <div class="container text-center">
           <h2>Pricing</h2>
           	<div class="row">
                 <div class="col-sm-4 from-left">
                   <ul class="table nm np">
                     <li class="title nb">Pay per package</li>
-                    <li class="price nb">$15/package<br />plus shipping</li>
+                    <li class="price nb">$5/package<br />plus shipping</li>
                     <li>Regular shipping rates apply</li>
-                    
+                    <li><a href="#download">Join Now</a></li>
+                    <!--<li><a href="#">Click for more info!</a></li>-->
                   </ul>
                 </div>                
                 <div class="col-sm-4 bottom">
                   <ul class="table nm np">
-                    <li class="title nb">3 packages/month</li>
-                    <li class="price nb">$10/month<br />plus shipping</li>
+                    <li class="title nb">10 packages/month</li>
+                    <li class="price nb">$15/month<br />plus shipping</li>
                     <li>15% off shipping rates</li>
-                    
-                   
+                    <li><a href="#download">Join Now</a></li>
+                    <!--<li><a href="#">Click for more info!</a></li>-->
                   </ul>
                 </div>                
-               <div class="col-sm-4 from-right">
+                <div class="col-sm-4 from-right">
                   <ul class="table nm np">
-                    <li class="title nb">6 packages/month</li>
-                    <li class="price nb">$20/month<br />plus shipping</li>
-                    <li>20% off shipping rates</li>
-                    
-                  
+                    <li class="title nb">Unlimited Packages</li>
+                    <li class="price nb">$99/year<br />free shipping</li>
+                    <li>Best Deal</li>
+                   <li><a href="#download">Join Now</a></li>
                   </ul>
                 </div>
         	</div>
     	</div>
-    </section> -->
+    </section>  
     <!--End Pricing table-->    
 
     
@@ -618,13 +627,13 @@
     <!--Footer-->
 	<footer>
 	<div class="container text-center">
-		<!--<ul class="social clearfix nm">			
+		<ul class="social clearfix nm">			
 			<li><a href="#" data-toggle="tooltip" title="Android"><img src="/img/android.png"></a></li>
 			<li><a href="#" data-toggle="tooltip" title="Chrome"><img src="/img/chrome.png"></a></li>
 			<li><a href="#" data-toggle="tooltip" title="Windows"><img src="/img/windows8.png"></a></li>
 			<li><a href="#" data-toggle="tooltip" title="Google+"><img src="/img/googleplus-square.png"></a></li>
-		</ul>-->
-		<p>Skyfall.club coming to Google Play, App Store & Microsoft Store. 2014 &copy;</p>
+		</ul>
+		<p>Skyfall.club coming to Google Play, App Store, Microsoft Store and more. 2014 &copy;</p>
 	</div> 
 	</footer>
     <!--End Footer-->    
@@ -676,14 +685,14 @@
 	}
 
 	</script>
- <script type="text/javascript">
-        var _mfq = _mfq || [];
-        (function () {
-        var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true;
-        mf.src = "//cdn.mouseflow.com/projects/8c9282ae-ce65-429c-a7bf-a2af2440c032.js";
-        document.getElementsByTagName("head")[0].appendChild(mf);
-      })();
-    </script>
+<script type="text/javascript">
+   var _mfq = _mfq || [];
+   (function() {
+       var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true;
+       mf.src = "//cdn.mouseflow.com/projects/8c9282ae-ce65-429c-a7bf-a2af2440c032.js";
+       document.getElementsByTagName("head")[0].appendChild(mf);
+   })();
+</script>
   </body>
   <!-- Our FB JS Include Goes here-->
   <script src="js/facebook/fb.js"></script>
