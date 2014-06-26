@@ -20,7 +20,7 @@ function addBeta(){
 
 					$('#socialShare').fadeIn();
 					$('#form-email, #form-emailTop').attr('placeholder',"Congrats!");
-					$('#form-email, #form-emailTop').val('');
+					$('#form-email').val('');
 					$('#sendBut').val("Applied!");
 					$('#sendButTop').val("Applied!");
 					$('#sendBut1').hide();
@@ -47,7 +47,7 @@ function addBeta(){
 
 					$('#socialShare').fadeIn();
 					$('#form-email, #form-emailTop').attr('placeholder',"Congrats!");
-					$('#form-email, #form-emailTop').val('');
+					$('#form-emailTop').val('');
 					$('#sendBut').val("Applied!");
 					$('#sendButTop').val("Applied!");
 					$('#sendBut1').hide();
