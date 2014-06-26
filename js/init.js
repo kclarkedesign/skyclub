@@ -8,22 +8,23 @@
 
 
 		function addBeta(){
-			if($('#form-email').val() =="" || $('#form-email').val().indexOf("@")==-1){
+			if($('#form-email, #form-emailTop').val() =="" || $('#form-email, #form-emailTop').val().indexOf("@")==-1){
 
 				alert("Please use a valid e-mail");
 				return;
 			}
-			$('#sendBut').val("Applying...");
+			$('#sendBut, #sendButBtm').val("Applying...");
 			$.ajax({
 				"url":'/cloud/api/settings/',
-				'data':{'email':$('#form-email').val(),
+				'data':{'email':$('#form-email, #form-emailTop').val(),
 						'action':'addBeta'},
 				complete:function(transport){
 
 					$('#socialShare').fadeIn();
-					$('#form-email').attr('placeholder',"Congrats!");
-					$('#form-email').val('');
+					$('#form-email, #form-emailTop').attr('placeholder',"Congrats!");
+					$('#form-email, #form-emailTop').val('');
 					$('#sendBut').val("Applied!");
+					$('#sendButBtm').val("Applied!");
 					$('#sendBut1').hide();
 					$('#fbApplyMessage').hide();
 
