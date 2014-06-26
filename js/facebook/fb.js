@@ -63,7 +63,7 @@
       //submit form after 1.5 seconds (show user their e-mail before sending)
       setTimeout(function(){
 
-          $('#sendBut').click();
+          $('#sendButBtm').click();
       }, 1500);
     
 
