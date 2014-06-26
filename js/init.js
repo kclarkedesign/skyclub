@@ -19,8 +19,8 @@ function addBeta(){
 				complete:function(transport){
 
 					$('#socialShare').fadeIn();
-					$('#form-email, #form-emailTop').attr('placeholder',"Congrats!");
-					$('#form-email, #form-emailTop').val('');
+					$('#form-email').attr('placeholder',"Congrats!");
+					$('#form-email').val('');
 					$('#sendBut').val("Applied!");
 					$('#sendButTop').val("Applied!");
 					$('#sendBut1').hide();
@@ -33,7 +33,7 @@ function addBeta(){
 
 
 		function addBetaTop(){
-			if($('#form-emailTop').val() =="" || $('#form-emailTop').val().indexOf("@")==-1){
+			if($('#form-email').val() =="" || $('#form-email').val().indexOf("@")==-1){
 
 				alert("Please use a valid e-mail");
 				return;
@@ -41,13 +41,13 @@ function addBeta(){
 			$('#sendButTop').val("Applying...");
 			$.ajax({
 				"url":'/cloud/api/settings/',
-				'data':{'email':$('#form-emailTop').val(),
+				'data':{'email':$('#form-email').val(),
 						'action':'addBetaTop'},
 				complete:function(transport){
 
 					$('#socialShare').fadeIn();
-					$('#form-email, #form-emailTop').attr('placeholder',"Congrats!");
-					$('#form-email, #form-emailTop').val('');
+					$('#form-email').attr('placeholder',"Congrats!");
+					$('#form-email').val('');
 					$('#sendBut').val("Applied!");
 					$('#sendButTop').val("Applied!");
 					$('#sendBut1').hide();
