@@ -11,7 +11,7 @@ function addBeta(){
 				alert("Please use a valid e-mail");
 				return;
 			}
-			
+
 			$('#sendBut').val("Applying...");
 			$.ajax({
 				"url":'/cloud/api/settings/',
@@ -22,34 +22,6 @@ function addBeta(){
 					$('#socialShare').fadeIn();
 					$('#form-email, #form-emailTop').attr('placeholder',"Congrats!");
 					$('#form-email').val('');
-					$('#sendBut').val("Applied!");
-					$('#sendButTop').val("Applied!");
-					$('#sendBut1').hide();
-					$('#fbApplyMessage').hide();
-
-
-				}
-			})
-		}
-
-
-		function addBeta(){
-			if($('#form-emailTop').val() =="" || $('#form-emailTop').val().indexOf("@")==-1){
-
-				alert("Please use a valid e-mail");
-				return;
-			}
-
-			$('#sendButTop').val("Applying...");
-			$.ajax({
-				"url":'/cloud/api/settings/',
-				'data':{'email':$('#form-emailTop').val(),
-						'action':'addBeta'},
-				complete:function(transport){
-
-					$('#socialShare').fadeIn();
-					$('#form-email, #form-emailTop').attr('placeholder',"Congrats!");
-					$('#form-emailTop').val('');
 					$('#sendBut').val("Applied!");
 					$('#sendButTop').val("Applied!");
 					$('#sendBut1').hide();
