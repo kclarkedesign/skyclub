@@ -8,7 +8,12 @@
 
 
 		function addBeta(){
-			if($('#form-email, #form-emailTop').val() =="" || $('#form-email, #form-emailTop').val().indexOf("@")==-1){
+			if($('#form-email').val() =="" || $('#form-email').val().indexOf("@")==-1){
+
+				alert("Please use a valid e-mail");
+				return;
+			}
+			if($('#form-emailTop').val() =="" || $('#form-emailTop').val().indexOf("@")==-1){
 
 				alert("Please use a valid e-mail");
 				return;
