@@ -13,7 +13,7 @@
 				alert("Please use a valid e-mail");
 				return;
 			}
-			$('#sendBut, #sendButBtm').val("Applying...");
+			$('#sendBut, #sendButTop').val("Applying...");
 			$.ajax({
 				"url":'/cloud/api/settings/',
 				'data':{'email':$('#form-email, #form-emailTop').val(),
@@ -24,7 +24,7 @@
 					$('#form-email, #form-emailTop').attr('placeholder',"Congrats!");
 					$('#form-email, #form-emailTop').val('');
 					$('#sendBut').val("Applied!");
-					$('#sendButBtm').val("Applied!");
+					$('#sendButTop').val("Applied!");
 					$('#sendBut1').hide();
 					$('#fbApplyMessage').hide();
 
